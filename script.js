@@ -18,16 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
         feedbackItem.classList.add("feedback-item");
 
         const feedbackName = document.createElement("h3");
-        feedbackName.textContent = "Name:" + name;
+        feedbackName.textContent = name;
 
         const feedbackRating = document.createElement("p");
-        feedbackRating.textContext = "Rating:" + rating;
+        feedbackRating.textContext = rating;
 
         const feedbackComments = document.createElement("P");
-        feedbackComments.textContext = "Comments:" + comments;
+        feedbackComments.textContext = comment;
 
+        feedbackItem.appendChild(feedbackName);
+        feedbackItem.appendChild(feedbackRating);
+        feedbackItem.appendChild(feedbackComments);
 
+        feedbackDisplay.appendChild(FeedbackItem);
 
+        form.reset();
 
-    }
-}
+    });
+});
