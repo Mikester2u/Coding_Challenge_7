@@ -4,7 +4,7 @@
     <meta charster = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
-    <title>Feedback Form</title>
+    <title>Feedback Portal</title>
     <style>
 
         body {
@@ -20,7 +20,32 @@
     </style>
 </head>
 
-
-
+<body>
+    <h1>Feedback Portal</h1>
+    <form id = "feedback-form">
+        <div>
+            <label for = "name">Name:</label>
+            <input type = "text" id = "name" name = "name" required>
+        </div>
+        <div>
+            <label for = "rating">Rating:</label>
+            <select id = "rating" name = "rating" required>
+                <option value = "">Choose a rating</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5</option>
+            </select>
+        </div>
+        <div>
+            <label for = "comments">Comments:</label>
+            <textarea id = "comments" name = "comments" required></textarea>
+        </div>
+        <button type = "submit">Submit Feedback</button>
+    </form>
+    <div id="feedback-display"></div>
+    <script src = "script.js"></script>
+</body>
 
 </html>
